@@ -21,7 +21,7 @@ const Square = ({value, onClick}) => {
     }
 
     return (
-        <button className= "square" onClick={onClick}>{value}</button>
+        <button className={squareState()} onClick={onClick}>{value}</button>
     )
 }
 
