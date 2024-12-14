@@ -6,7 +6,7 @@ import Square from "./Square";
 // 2 = a sunken part of a ship
 // 3 = a missed shot
 
-const Board = ({ squares, onClick }) => {
+const Board = ({ squares, onClick, isCpu}) => {
 
     return (
         <div className="board">
@@ -19,8 +19,8 @@ const Board = ({ squares, onClick }) => {
                             key={`${rowIndex}-${colIndex}`}
                             value={square}
                             onClick={() => onClick(rowIndex, colIndex)} // Manejo del clic en la celda
+                            isCpu={isCpu}
                         />
-
                     ))}
                 </div>
             ))}
