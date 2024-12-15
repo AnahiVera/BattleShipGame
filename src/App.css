@@ -5,52 +5,202 @@
   text-align: center;
 }
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; 
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #aba5e0;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 4em;
   line-height: 1.1;
+  font-weight: 700;
+  color: #5c2b82;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
+
+/* General square styling */
 button {
-  border-radius: 8px;
-  background-color: #16a111;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px;
   cursor: pointer;
- 
-}
-button:hover {
-  border-color: #121888;
+  position: relative;
 }
 
 
+/* Optional: Adding a slight animation on hit/miss */
+@keyframes hitAnimation {
+  0% {
+    transform: scale(1);
+  }
 
-.square {
-  margin: 1px;
-  
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 
+/* Game Controls Container */
+.game-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark transparent overlay */
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
 
+.modal.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect for Modal */
+.modal-content button:hover {
+  background-color: #218838;
+}
+
+/* Styling for the Game Controls (when the game is not over) */
+.game-options {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Status text styling */
+.game-options h4 {
+  font-size: 35px;
+  color: #232722;
+  margin-bottom: 10px;
+}
+
+/* Restart button styling */
+.game-options .btn {
+  padding: 5px;
+  background-color: #007bff;
+  border-color: #0056b3;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.game-options .btn:hover {
+  background-color: #00ff80;
+}
+
+/* Modal overlay background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal container */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Modal header styling */
+.modal-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Modal message text */
+.modal-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Restart button in modal */
+.modal-content .btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-color: #0056b3;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.modal-content .btn-primary:hover {
+  background-color: #0056b3;
+}

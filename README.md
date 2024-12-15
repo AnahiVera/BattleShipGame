@@ -1,13 +1,25 @@
-Instrucciones para ejecutar el proyecto
-________________________________________
+# 🎮 🚢 Battleship 🎮 🚢
 
-Clonar el repositorio:
+
+## Ejecutar el Proyecto
+
+1. Clone the repository:
+```bash
 git clone [URL-del-repositorio]
+```
 
-Instalar las dependencias:
+2. Install dependencies:
+```bash
 npm install
+```
 
-Iniciar el servidor de desarrollo:
+3. Start developer server:
+```bash
 npm run dev
+```
 
-Abrir el navegador en http://localhost:5173
+4. Open browser in `http://localhost:5173`
+
+
+
+
