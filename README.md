@@ -1,23 +1,23 @@
 # 🎮 🚢 Battleship 🎮 🚢
 
-## Characteristics and funcionalities
+## Characteristics and functionalities
 
-- **Ship Placement**: In every turn the ships are place randomly on each board.
-- **Turns and attacks**: Click to attack, the player always starts and the computer attacks after in a randomly fashion.
-- **Victory and Gameover**: A message will pop up when cpu or player wins.
+- **Ship Placement**: In every turn, the ships are placed randomly on each board.
+- **Turns and attacks**: Click to attack; the player always starts and the computer attacks after in a random fashion.
+- **Victory and Game over**: A message will pop up when either the CPU or the player wins.
 
 
 ## technologies
 
 - **Vite**: Template to initialize the project.
 - **JavaScript**: Language for game logic.
-- **React**: Library to manage components as necesary.
+- **React**: Library to manage components as necessary.
 - **CSS**: For effects and general design.
 - **Bootstrap**: To implement easy divisions of the components, like boards and instructions.
 
 
 
-## Execute the proyect
+## Execute the project
 
 1. Clone the repository:
 ```bash
@@ -34,7 +34,7 @@ npm install
 npm run dev
 ```
 
-4. Open browser in `http://localhost:5173`
+4. Open your browser at `http://localhost:5173`
 
 
 
