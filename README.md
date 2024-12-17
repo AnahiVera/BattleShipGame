@@ -7,7 +7,7 @@
 - **Victory and Game over**: A message will pop up when either the CPU or the player wins.
 
 
-## technologies
+## Technologies
 
 - **Vite**: Template to initialize the project.
 - **JavaScript**: Language for game logic.
@@ -35,6 +35,8 @@ npm run dev
 ```
 
 4. Open your browser at `http://localhost:5173`
+
+5. Have fun playing! 
 
 
 
